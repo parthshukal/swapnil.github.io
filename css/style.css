@@ -3075,3 +3075,9 @@ a.w-webflow-badge {
 }
 
 #scroll{z-index:2;position:fixed;right:0;bottom:10px;cursor:pointer;width:10%;display:none;-webkit-border-radius:60px;-moz-border-radius:60px;border-radius:60px}
+
+@media (max-width: 768px){
+	#scroll{
+		width: 20%!important;
+	}	
+}
