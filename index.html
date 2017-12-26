@@ -28,7 +28,7 @@
     
 </head>
 
-<body class="body">
+<body class="body" id="top" href="javascript:void(0);">
     <div data-collapse="medium" data-animation="default" data-duration="400" data-doc-height="1" class="navbar-2 w-nav">
         <div class="top-line w-container">
             <a href="#hero" class="brand w-nav-brand"><img src="img/5a3de565f6b9a40001bc0583_LOG.jpg" width="165" srcset="https://daks2k3a4ib2z.cloudfront.net/5933bf0eaf3cc879799d9bed/5a3de565f6b9a40001bc0583_LOG-p-500.jpeg 500w, https://daks2k3a4ib2z.cloudfront.net/5933bf0eaf3cc879799d9bed/5a3de565f6b9a40001bc0583_LOG-p-800.jpeg 800w, https://daks2k3a4ib2z.cloudfront.net/5933bf0eaf3cc879799d9bed/5a3de565f6b9a40001bc0583_LOG-p-1080.jpeg 1080w, https://daks2k3a4ib2z.cloudfront.net/5933bf0eaf3cc879799d9bed/5a3de565f6b9a40001bc0583_LOG-p-1600.jpeg 1600w, https://daks2k3a4ib2z.cloudfront.net/5933bf0eaf3cc879799d9bed/5a3de565f6b9a40001bc0583_LOG-p-2000.jpeg 2000w, https://daks2k3a4ib2z.cloudfront.net/5933bf0eaf3cc879799d9bed/5a3de565f6b9a40001bc0583_LOG-p-2600.jpeg 2600w, https://daks2k3a4ib2z.cloudfront.net/5933bf0eaf3cc879799d9bed/5a3de565f6b9a40001bc0583_LOG-p-3200.jpeg 3200w, https://daks2k3a4ib2z.cloudfront.net/5933bf0eaf3cc879799d9bed/5a3de565f6b9a40001bc0583_LOG.jpg 13187w" sizes="(max-width: 479px) 84vw, 165px" class="image-24" />
@@ -268,5 +268,25 @@
     <script src="js/jquery.min.js" type="text/javascript"></script>
     <script src="js/webflow.eef62405e.js" type="text/javascript"></script>
     <!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+
+    <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none; float: right;"><img src="img/up.png" alt=""><span></span></a>
 </body>
+ 
+ <script>
+     $(document).ready(function() {
+       $(window).scroll(function() {
+           if ($(this).scrollTop() > 100) {
+               $('#scroll').fadeIn();
+           } else {
+               $('#scroll').fadeOut();
+           }
+       });
+       $('#scroll').click(function() {
+           $("html, body").animate({
+               scrollTop: 0
+           }, 600);
+           return false;
+       });
+    });
+ </script>
 </html>
