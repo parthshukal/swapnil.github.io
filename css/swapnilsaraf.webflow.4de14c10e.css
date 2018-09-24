@@ -1359,5 +1359,6 @@ html.w-mod-js *[data-ix="scale-on-scroll"] {
 }
 
 
-.w-webflow-badge{
-display:none!important;
+a.w-webflow-badge {
+    display: none!important;
+}
