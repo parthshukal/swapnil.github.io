@@ -1357,3 +1357,7 @@ html.w-mod-js *[data-ix="scale-on-scroll"] {
   font-weight: 400;
   font-style: normal;
 }
+
+
+.w-webflow-badge{
+display:none!important;
